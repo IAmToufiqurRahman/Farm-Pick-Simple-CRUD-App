@@ -20,7 +20,7 @@ Then, we implement the edit form to to successfully or correctly show the curren
 
 Next, we implement the final operation in our CRUD, delete product. We set up a delete route for products ID and we know that we can't actually make a delete request from an HTML form in the browser, but we can fake it. We can send a post request and then add on the method override query string, just like we were able to send a put request. So, in the show.ejs page we add a Delete product button in a form where we're going to add the query string _method = DELETE and then method should be a post request. 
 
-Finally, we add the last feature, view products by category. So, we make the category in show.ejs page as a link that will filter all the products of the same category and show us. To implement this funtionality, we use the category as the query string from the link. Now in the route for /products as a get request, we going to look in request as query and see if we have a category there 
+Finally, we add the last feature, view products by category. So, we make the category in show.ejs page as a link that will filter all the products of the same category and show us. To implement this funtionality, we use the category as the query string from the link. Now in the route for /products as a get request, we going to look in request as query and see if we have a category there.  
 
 ##
 
@@ -63,7 +63,11 @@ We can edit if any info was missing while creating the new product
 
 Finally we can see the new product is added to the all product list.
 
+##
 
+![image](https://user-images.githubusercontent.com/60101798/126063571-00de2cea-9907-487a-a783-ec7324f7439f.png)
+
+Lastly, when we click on the category we get all the products of that category. 
 
 
 
