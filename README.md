@@ -2,6 +2,9 @@
 
 Basically this is a simple app that implements full CRUD with forms where we can create new products, update products, delete products, show/ list all the products and also filter them on the basis of category using Mongoose the ODM(Object Document Mapper) of MongoDB. 
 
+## Update 
+Farmpick projec update: each product is going to be associated with a specific farm, so adding a new farm with its name, city, email is added. 
+
 ##
 
 We start with integrating Mongoose with Express. We listen to the http://localhost:8080/ port. Next, we create our model of the application in a separate file product.js defining the product schema. The schema defines our product has a name which is of type String and it is required, then price which is of type Number and also required and finally a category, we delcare an enum to specify the category option to be fruit, vegetables or dairy. Then, we compile our model and export it from product.js. We create a seeds.js file to populate the database with some initial data. 
@@ -69,7 +72,17 @@ Finally we can see the new product is added to the all product list.
 
 Lastly, when we click on the category we get all the products of that category. 
 
+## Update 
 
+![image](https://user-images.githubusercontent.com/60101798/127745609-d7e446c8-3de0-4088-a8d9-1bfdb3376b14.png)
+
+we can add farm by specifiyng the name, city and email of that farm
+
+##
+
+![image](https://user-images.githubusercontent.com/60101798/127745641-91e2ea5d-cca6-468c-9fdf-24363cacfc08.png)
+
+products now will be associated with the specific farm. 
 
 
 
