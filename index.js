@@ -23,7 +23,7 @@ mongoose
 app.set('views', path.join(__dirname, 'views'))
 app.set('view engine', 'ejs')
 app.use(express.urlencoded({ extended: true })) // This middleware is used to get the request body
-app.use(methorOverride('_method')) // Method override is used to access put request in form
+app.use(methorOverride('_method')) // Method override is used to access patch/put requests in form because forms only have get & post request
 
 const categories = ['fruit', 'vegetables', 'dairy']
 
